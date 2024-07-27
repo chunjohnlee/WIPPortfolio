@@ -1,10 +1,29 @@
 import NextLink from 'next/link'
-import { Button, Container, Box, Heading, Image, Link, useColorModeValue } from '@chakra-ui/react'
+import {
+    Button,
+    Container,
+    Box,
+    Heading,
+    Image,
+    Link,
+    List,
+    ListItem,
+    SimpleGrid,
+    Icon,
+    useColorModeValue
+} from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
+import { GridItem } from '../components/grid-item'
+import {
+    IoLogoTwitter,
+    IoLogoInstagram,
+    IoLogoGithub,
+    IoLogoLinkedin,
+} from 'react-icons/io5'
 
 const Page = () => {
     return (
@@ -77,7 +96,7 @@ const Page = () => {
                     </Paragraph>
 
                     <Box align="center" my={4}>
-                        <NextLink href="/work">
+                        <NextLink href="/works">
                             <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
                                 My portfolio
                             </Button>
@@ -135,6 +154,42 @@ const Page = () => {
                     <Paragraph>
                         Jazz, Folk music, Art, History, Politics, Video games, Coffee, Traveling, Jellied eels, Ramen, Pasta
                     </Paragraph>
+                </Section>
+
+                <Section delay={0.3}>
+                    <Heading as="h3" variant="section-title">
+                        Social
+                    </Heading>
+                    <List>
+                        <ListItem>
+                            <Link href="https://x.com/chunlee_john" target="_blank">
+                                <Button
+                                    variant="ghost"
+                                    colorScheme="teal"
+                                    leftIcon={<Icon as={IoLogoTwitter} />}>
+                                    @chunlee_john
+                                </Button>
+                            </Link>
+                        </ListItem>
+                        <ListItem>
+                            <Link href="https://github.com/blackjlc" target="_blank">
+                                <Button
+                                    variant="ghost"
+                                    colorScheme="teal"
+                                    leftIcon={<Icon as={IoLogoGithub} />}>
+                                    @blackjlc
+                                </Button>
+                            </Link>
+                        </ListItem>
+
+                        {
+                            // TODO: Add Instagram
+                        }
+                        {
+                        /* <Link href="https://instagram.com/blackjlc" title="Instagram" target="_blank">
+                            <IoLogoInstagram size={24} />
+                        </Link> */}
+                    </List>
                 </Section>
             </Container>
         </Layout>

@@ -6,32 +6,32 @@ import Layout from "../../components/layouts/article"
 
 const Work = () => {
     return (
-        <Layout title="rop">
+        <Layout title="urolift">
             <Container>
                 <Title>
-                    Retinopathy of Prematurity simulation <Badge>2024</Badge>
+                    <Badge>2022</Badge>
                 </Title>
                 <P>
-                    A VR simulation that helps ophthalmologists to diagnose and treat Retinopathy of Prematurity (ROP), a potentially blinding eye disorder that primarily affects premature infants. A PC version will also be available for those who don't have VR devices.
+                    A VR training platform that accelerates the effective use of the Teleflex’s UroLift® 2 System, an innovative technology for treatment of benign prostatic hyperplasia (BPH), commonly known as enlarged prostate.
                 </P>
                 <List ml={4} my={4}>
                     <ListItem>
                         <Meta>Platform</Meta>
-                        <span>Standalone VR/Windows/Mac</span>
+                        <span>VR</span>
                     </ListItem>
                     <ListItem>
                         <Meta>Link</Meta>
-                        <Link href="https://www.aao.org/newsroom/news-releases/detail/academy-fundamentalvr-collaborate-virtual-reality" isExternal>
-                            Press releases (More to be announced) <ExternalLinkIcon mx="2px" />
+                        <Link href="https://investors.teleflex.com/news/news-details/2022/Teleflex-Announces-Collaboration-with-FundamentalVR-to-Improve-Training-ThroughVirtual-Reality-Simulation/default.aspx" isExternal>
+                            Press releases <ExternalLinkIcon mx="2px" />
                         </Link>
                     </ListItem>
                     <ListItem>
                         <Meta>Features developed</Meta>
-                        <span>Optics simulation, Mesh deformation, Virtual ophthalmoscope, retina VFX, Multi-user data sync</span>
+                        <span>Internal anatomy visualizer, Treatment position tracking, ghost hand guidance, UI</span>
                     </ListItem>
                     <ListItem>
                         <Meta>Role</Meta>
-                        <span>Deputy Primary Engineer</span>
+                        <span>Engineer</span>
                     </ListItem>
                     {/* <ListItem>
                         <Meta>Blogpost</Meta>
@@ -41,7 +41,8 @@ const Work = () => {
                     </ListItem> */}
                 </List>
 
-                <WorkImage src="/images/aao.png" alt="Rop" />
+                <WorkImage src="/images/urolift.jpg" alt="Ghost hand visual guidance" />
+                <WorkImage src="/images/thump-urolift.webp" alt="Anatomy visualizer" />
             </Container>
         </Layout>
     )

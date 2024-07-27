@@ -6,32 +6,32 @@ import Layout from "../../components/layouts/article"
 
 const Work = () => {
     return (
-        <Layout title="rop">
+        <Layout title="wallcity">
             <Container>
                 <Title>
-                    Retinopathy of Prematurity simulation <Badge>2024</Badge>
+                    Les Misérables in Kowloon Walled City VR <Badge>2024</Badge>
                 </Title>
                 <P>
-                    A VR simulation that helps ophthalmologists to diagnose and treat Retinopathy of Prematurity (ROP), a potentially blinding eye disorder that primarily affects premature infants. A PC version will also be available for those who don't have VR devices.
+                    A VR immersive experience that takes you inside the 3D scan of a miniature model for a 360-degree immersive theatre design of the Kowloon Walled City, a once densely populated, ungoverned settlement in Hong Kong that was demolished in the early 1990s.
                 </P>
                 <List ml={4} my={4}>
                     <ListItem>
                         <Meta>Platform</Meta>
-                        <span>Standalone VR/Windows/Mac</span>
+                        <span>Standalone VR</span>
                     </ListItem>
                     <ListItem>
                         <Meta>Link</Meta>
-                        <Link href="https://www.aao.org/newsroom/news-releases/detail/academy-fundamentalvr-collaborate-virtual-reality" isExternal>
-                            Press releases (More to be announced) <ExternalLinkIcon mx="2px" />
+                        <Link href="https://www.athenartportfolio.com/lminkwc" isExternal>
+                            Original Artwork <ExternalLinkIcon mx="2px" />
                         </Link>
                     </ListItem>
                     <ListItem>
                         <Meta>Features developed</Meta>
-                        <span>Optics simulation, Mesh deformation, Virtual ophthalmoscope, retina VFX, Multi-user data sync</span>
+                        <span>Dynamic sky, gaze-assists movement, stylized shader</span>
                     </ListItem>
                     <ListItem>
                         <Meta>Role</Meta>
-                        <span>Deputy Primary Engineer</span>
+                        <span>Sole engineer</span>
                     </ListItem>
                     {/* <ListItem>
                         <Meta>Blogpost</Meta>
@@ -41,7 +41,8 @@ const Work = () => {
                     </ListItem> */}
                 </List>
 
-                <WorkImage src="/images/aao.png" alt="Rop" />
+                <WorkImage src="/images/wallcity_night.jpg" alt="Walled city at night" />
+                <WorkImage src="/images/wallcity_protest.jpg" alt="Walled city at protest" />
             </Container>
         </Layout>
     )

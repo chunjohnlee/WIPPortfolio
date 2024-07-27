@@ -6,32 +6,32 @@ import Layout from "../../components/layouts/article"
 
 const Work = () => {
     return (
-        <Layout title="rop">
+        <Layout title="vicarious">
             <Container>
                 <Title>
-                    Retinopathy of Prematurity simulation <Badge>2024</Badge>
+                    Vicarious Robot VR sim <Badge>2023</Badge>
                 </Title>
                 <P>
-                    A VR simulation that helps ophthalmologists to diagnose and treat Retinopathy of Prematurity (ROP), a potentially blinding eye disorder that primarily affects premature infants. A PC version will also be available for those who don't have VR devices.
+                    A VR training simulation that allows surgeons to practice on the Vicarious Surgical Robot, a minimally invasive surgical system that leverages human-like robots and VR to perform surgeries remotely.
                 </P>
                 <List ml={4} my={4}>
                     <ListItem>
                         <Meta>Platform</Meta>
-                        <span>Standalone VR/Windows/Mac</span>
+                        <span>Tethered VR</span>
                     </ListItem>
                     <ListItem>
                         <Meta>Link</Meta>
-                        <Link href="https://www.aao.org/newsroom/news-releases/detail/academy-fundamentalvr-collaborate-virtual-reality" isExternal>
-                            Press releases (More to be announced) <ExternalLinkIcon mx="2px" />
+                        <Link href="https://www.technosundae.com/vicarious-surgical-vr" isExternal>
+                            Learn more <ExternalLinkIcon mx="2px" />
                         </Link>
                     </ListItem>
                     <ListItem>
                         <Meta>Features developed</Meta>
-                        <span>Optics simulation, Mesh deformation, Virtual ophthalmoscope, retina VFX, Multi-user data sync</span>
+                        <span>soft tissue and suturing integration, robot control, IK of robot arms, in-VR stereoscopic video re-projection, optimization</span>
                     </ListItem>
                     <ListItem>
                         <Meta>Role</Meta>
-                        <span>Deputy Primary Engineer</span>
+                        <span>Engineer, R&D integration</span>
                     </ListItem>
                     {/* <ListItem>
                         <Meta>Blogpost</Meta>
@@ -41,7 +41,7 @@ const Work = () => {
                     </ListItem> */}
                 </List>
 
-                <WorkImage src="/images/aao.png" alt="Rop" />
+                <WorkImage src="/images/vicarious.png" alt="Vicarious" />
             </Container>
         </Layout>
     )
