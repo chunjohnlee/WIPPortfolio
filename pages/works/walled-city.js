@@ -3,11 +3,16 @@ import { ExternalLinkIcon } from "@chakra-ui/icons"
 import { Title, WorkImage, Meta } from "../../components/work"
 import P from "../../components/paragraph"
 import Layout from "../../components/layouts/article"
+import NoSsr from "../../components/no-ssr"
+import WallCity from "../../components/wallcity"
 
 const Work = () => {
     return (
         <Layout title="wallcity">
             <Container>
+                <NoSsr>
+                    <WallCity />
+                </NoSsr>
                 <Title>
                     Les Misérables in Kowloon Walled City VR <Badge>2024</Badge>
                 </Title>

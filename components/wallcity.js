@@ -18,11 +18,11 @@ const WallCity = () => {
     const [loading, setLoading] = useState(true)
     const refRenderer = useRef()
     const [_camera, SetCamera] = useState()
-    const [target] = useState(new THREE.Vector3(-0.5, 1.2, 0))
+    const [target] = useState(new THREE.Vector3(-0.5, 2.5, 0))
     const [initialCameraPosition] = useState(
         new THREE.Vector3(
             10 * Math.sin(0.2 * Math.PI),
-            0,
+            5,
             10 * Math.cos(0.2 * Math.PI))
     )
     const [scene] = useState(new THREE.Scene())
@@ -55,7 +55,7 @@ const WallCity = () => {
             container.appendChild(renderer.domElement)
             refRenderer.current = renderer
 
-            const scale = scH * 0.005 + 4.8
+            const scale = scH * 0.005 + 1.5
             const camera = new THREE.OrthographicCamera(
                 -scale,
                 scale,
@@ -96,7 +96,7 @@ const WallCity = () => {
                     const p = initialCameraPosition
                     const angle = easeInOutSine(frame / maxFrame * 2) * Math.PI / 4
                     const offset = - Math.PI / 2
-                    camera.position.y = 5
+                    camera.position.y = p.y
                     camera.position.x =
                         p.x * Math.cos(angle + offset) +
                         p.z * Math.sin(angle + offset)
