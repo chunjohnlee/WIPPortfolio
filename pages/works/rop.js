@@ -3,11 +3,16 @@ import { ExternalLinkIcon } from "@chakra-ui/icons"
 import { Title, WorkImage, Meta } from "../../components/work"
 import P from "../../components/paragraph"
 import Layout from "../../components/layouts/article"
+import NoSsr from "../../components/no-ssr"
+import OpticsSim from "../../components/optic-sim"
 
 const Work = () => {
     return (
-        <Layout title="rop">
+        <Layout title="Retinopathy of Prematurity simulation - John Lee">
             <Container>
+                <NoSsr>
+                    <OpticsSim />
+                </NoSsr>
                 <Title>
                     Retinopathy of Prematurity simulation <Badge>2024</Badge>
                 </Title>

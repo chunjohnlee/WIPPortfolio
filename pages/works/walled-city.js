@@ -8,7 +8,7 @@ import WallCity from "../../components/wallcity"
 
 const Work = () => {
     return (
-        <Layout title="wallcity">
+        <Layout title="Les Misérables in Kowloon Walled City - John Lee">
             <Container>
                 <NoSsr>
                     <WallCity />

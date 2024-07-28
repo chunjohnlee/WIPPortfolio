@@ -4,10 +4,6 @@ import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 import { loaderGLTFModel } from '../libs/model'
 
-function easeOutCirc(x) {
-    return Math.sqrt(1 - Math.pow(x - 1, 4));
-}
-
 function easeInOutSine(x) {
     return -(Math.cos(Math.PI * x) - 1) / 2;
 
@@ -132,7 +128,7 @@ const WallCity = () => {
             className='wall-city'
             m="auto"
             mt={['-20px', '-60px', '-120px']}
-            mb={['-10px', '-20px', '-40px']}
+            mb={['0px', '0px', '0px']}
             w={[280, 480, 640]}
             h={[280, 480, 640]}
             position="relative"

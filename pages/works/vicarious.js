@@ -6,7 +6,7 @@ import Layout from "../../components/layouts/article"
 
 const Work = () => {
     return (
-        <Layout title="vicarious">
+        <Layout title="Vicarious Robot VR sim - John Lee">
             <Container>
                 <Title>
                     Vicarious Robot VR sim <Badge>2023</Badge>

@@ -6,10 +6,10 @@ import Layout from "../../components/layouts/article"
 
 const Work = () => {
     return (
-        <Layout title="urolift">
+        <Layout title="UroLift® Training system - John Lee">
             <Container>
                 <Title>
-                    <Badge>2022</Badge>
+                    UroLift® Training system <Badge>2022</Badge>
                 </Title>
                 <P>
                     A VR training platform that accelerates the effective use of the Teleflex’s UroLift® 2 System, an innovative technology for treatment of benign prostatic hyperplasia (BPH), commonly known as enlarged prostate.
@@ -44,7 +44,7 @@ const Work = () => {
                 <WorkImage src="/images/urolift.jpg" alt="Ghost hand visual guidance" />
                 <WorkImage src="/images/thump-urolift.webp" alt="Anatomy visualizer" />
             </Container>
-        </Layout>
+        </Layout >
     )
 }
 
