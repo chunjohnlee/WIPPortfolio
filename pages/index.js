@@ -60,7 +60,7 @@ const Page = () => {
 
                 <Section delay={0.1}>
                     <Heading as="h3">
-                        Work
+                        About Me
                     </Heading>
                     <Paragraph>
                         As a Senior Software Engineer in{' '}
