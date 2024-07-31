@@ -10,9 +10,6 @@ const Work = () => {
     return (
         <Layout title="Retinopathy of Prematurity simulation - John Lee">
             <Container>
-                <NoSsr>
-                    <OpticsSim />
-                </NoSsr>
                 <Title>
                     Retinopathy of Prematurity simulation <Badge>2024</Badge>
                 </Title>
