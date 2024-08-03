@@ -1,4 +1,4 @@
-import { Container, Badge, Link, List, ListItem } from "@chakra-ui/react"
+import { Container, Badge, Link, List, UnorderedList, ListItem, Box, Text } from "@chakra-ui/react"
 import { ExternalLinkIcon } from "@chakra-ui/icons"
 import { Title, WorkImage, Meta } from "../../components/work"
 import P from "../../components/paragraph"
@@ -16,6 +16,10 @@ const Work = () => {
                 </P>
                 <List ml={4} my={4}>
                     <ListItem>
+                        <Meta>Role</Meta>
+                        <span>Engineer, R&D integration</span>
+                    </ListItem>
+                    <ListItem>
                         <Meta>Platform</Meta>
                         <span>Tethered VR</span>
                     </ListItem>
@@ -27,11 +31,13 @@ const Work = () => {
                     </ListItem>
                     <ListItem>
                         <Meta>Features developed</Meta>
-                        <span>soft tissue and suturing integration, robot control, IK of robot arms, in-VR stereoscopic video re-projection, optimization</span>
-                    </ListItem>
-                    <ListItem>
-                        <Meta>Role</Meta>
-                        <span>Engineer, R&D integration</span>
+                        <UnorderedList ml={10}>
+                            <ListItem>soft tissue and suturing integration</ListItem>
+                            <ListItem>robot control</ListItem>
+                            <ListItem>IK of robot arms and the patient cart</ListItem>
+                            <ListItem>in-VR stereoscopic video re-projection</ListItem>
+                            <ListItem>optimization</ListItem>
+                        </UnorderedList>
                     </ListItem>
                     {/* <ListItem>
                         <Meta>Blogpost</Meta>
@@ -41,7 +47,18 @@ const Work = () => {
                     </ListItem> */}
                 </List>
 
-                <WorkImage src="/images/vicarious.png" alt="Vicarious" />
+                <WorkImage src="/images/vicarious.png" alt="Vicarious Robot" />
+                <Text fontSize={15}>Performing suturing with Vicarious robot.</Text>
+                <Box h='30px' />
+                <WorkImage src="/images/vicarious2.jpg" alt="Patient Cart" />
+                <Text fontSize={15}>
+                    Patient Cart connects with the patient and allows the robot entering the body through a single incision while the surgeon maintains control of the instrument arm. I developed an IK system where the rotation of the joints is calculated according to the position and rotation of the robot and its own movement constraints.
+                </Text>
+                <Box h='30px' />
+                <WorkImage src="/images/vicarious3.jpg" alt="Surgeon Console" />
+                <Text fontSize={15}>
+                    This is where the surgeon sits to drive the robot. When the VR controllers are engaged to the console, the user can move the robot, its arms and camera with a high range of freedom.
+                </Text>
             </Container>
         </Layout>
     )

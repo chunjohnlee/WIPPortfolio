@@ -181,6 +181,16 @@ const Page = () => {
                                 </Button>
                             </Link>
                         </ListItem>
+                        <ListItem>
+                            <Link href="https://www.linkedin.com/in/chun-john-lee/" target="_blank">
+                                <Button
+                                    variant="ghost"
+                                    colorScheme="teal"
+                                    leftIcon={<Icon as={IoLogoLinkedin} />}>
+                                    John Lee
+                                </Button>
+                            </Link>
+                        </ListItem>
 
                         {
                             // TODO: Add Instagram

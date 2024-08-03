@@ -1,4 +1,4 @@
-import { Container, Badge, Link, List, ListItem } from "@chakra-ui/react"
+import { Container, Badge, Link, List, ListItem, Text, Box } from "@chakra-ui/react"
 import { ExternalLinkIcon } from "@chakra-ui/icons"
 import { Title, WorkImage, Meta } from "../../components/work"
 import P from "../../components/paragraph"
@@ -16,6 +16,10 @@ const Work = () => {
                 </P>
                 <List ml={4} my={4}>
                     <ListItem>
+                        <Meta>Role</Meta>
+                        <span>Engineer</span>
+                    </ListItem>
+                    <ListItem>
                         <Meta>Platform</Meta>
                         <span>VR</span>
                     </ListItem>
@@ -29,10 +33,6 @@ const Work = () => {
                         <Meta>Features developed</Meta>
                         <span>Internal anatomy visualizer, Treatment position tracking, ghost hand guidance, UI</span>
                     </ListItem>
-                    <ListItem>
-                        <Meta>Role</Meta>
-                        <span>Engineer</span>
-                    </ListItem>
                     {/* <ListItem>
                         <Meta>Blogpost</Meta>
                         <Link href="https://www.fundamentalvr.com/blog/rop-simulation" isExternal>
@@ -42,7 +42,13 @@ const Work = () => {
                 </List>
 
                 <WorkImage src="/images/urolift.jpg" alt="Ghost hand visual guidance" />
-                <WorkImage src="/images/thump-urolift.webp" alt="Anatomy visualizer" />
+                <Text fontSize={15}>Ghost hand visual guidance. Appear when available action is in the proximity.</Text>
+                <Box h='30px' />
+                <WorkImage src="/images/urolift2.jpg" alt="Anatomy visualizer" />
+                <Text fontSize={15}>Anatomy visualizer. Assist users to find the correct angle and depth of the device.</Text>
+                <Box h='30px' />
+                <WorkImage src="/images/urolift3.jpg" alt="Pop-up label UI" />
+                <Text fontSize={15}>Pop-up label UI. Position-based visual guidance that provides information to the user.</Text>
             </Container>
         </Layout >
     )

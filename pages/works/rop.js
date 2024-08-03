@@ -18,6 +18,10 @@ const Work = () => {
                 </P>
                 <List ml={4} my={4}>
                     <ListItem>
+                        <Meta>Role</Meta>
+                        <span>Deputy Primary Engineer</span>
+                    </ListItem>
+                    <ListItem>
                         <Meta>Platform</Meta>
                         <span>Standalone VR/Windows/Mac</span>
                     </ListItem>
@@ -30,10 +34,6 @@ const Work = () => {
                     <ListItem>
                         <Meta>Features developed</Meta>
                         <span>Optics simulation, Mesh deformation, Virtual ophthalmoscope, retina VFX, Multi-user data sync</span>
-                    </ListItem>
-                    <ListItem>
-                        <Meta>Role</Meta>
-                        <span>Deputy Primary Engineer</span>
                     </ListItem>
                     {/* <ListItem>
                         <Meta>Blogpost</Meta>
