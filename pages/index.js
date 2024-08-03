@@ -94,7 +94,7 @@ const Page = () => {
                         </NextLink>
                         . I'm currently working on a grand strategy game called The Rulers.
                     </Paragraph>
-
+                    <Box h={5} />
                     <Box align="center" my={4}>
                         <NextLink href="/works">
                             <Button rightIcon={<ChevronRightIcon />} bg="#ff6375">
