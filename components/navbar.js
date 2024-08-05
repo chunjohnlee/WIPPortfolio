@@ -8,14 +8,14 @@ const NavBarLinkItem = ({ href, path, children }) => {
     const active = path === href
     const inactiveColor = useColorModeValue('gray.900', 'whiteAlpha.900')
     return (
-        <NextLink href={href}>
-            <Link
-                p={2}
-                bg={active ? 'glassTeal' : undefined}
-                color={active ? '#202023' : inactiveColor}>
-                {children}
-            </Link>
-        </NextLink>
+        <Link
+            as={NextLink}
+            p={2}
+            bg={active ? 'glassTeal' : undefined}
+            color={active ? '#202023' : inactiveColor}
+            href={href}>
+            {children}
+        </Link>
     )
 }
 
@@ -33,7 +33,7 @@ const Navbar = props => {
         >
             <Container display="flex" p={2} maxW="container.md" wrap="wrap" align="center" justify="space-between">
                 <Flex align="center" mr={5}>
-                    <Heading as="h1" size="lg" letterSpacing="tighter">
+                    <Heading as="h1" size="lg" letterSpacing="wide">
                         <Logo />
                     </Heading>
                 </Flex>

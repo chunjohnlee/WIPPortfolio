@@ -13,6 +13,9 @@ const styles = {
 
 const components = {
     Heading: {
+        baseStyle: {
+            marginBottom: 3,
+        },
         variants: {
             'section-title': {
                 textDecoration: 'underline',
@@ -34,7 +37,8 @@ const components = {
 }
 
 const fonts = {
-    heading: "'M PLUS Rounded 1c'"
+    heading: "'Microgramma D Medium Extended'",
+    body: "'PP Telegraf'",
 }
 
 const colors = {
