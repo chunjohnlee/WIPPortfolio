@@ -11,8 +11,8 @@ import thumpWalledCity from "../public/images/wallcity_protest.jpg"
 const Works = () => {
     return (
         <Layout>
-            <Container>
-                <Heading as="h3" fontSize={20} mb={4}>
+            <Container maxW="container.xl">
+                <Heading as="h2" variant="page-title" mb={4} mt={4}>
                     Works
                 </Heading>
 
@@ -51,7 +51,7 @@ const Works = () => {
                 <Section delay={0.2}>
                     <Divider my={6} />
 
-                    <Heading as="h3" fontSize={20} mb={4}>
+                    <Heading as="h2" variant="page-title" mb={4}>
                         Collaborations
                     </Heading>
                 </Section>

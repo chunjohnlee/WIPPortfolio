@@ -9,10 +9,13 @@ import OpticsSim from "../../components/optic-sim"
 const Work = () => {
     return (
         <Layout title="Retinopathy of Prematurity simulation - John Lee">
-            <Container>
+            <Container maxW="container.xl">
                 <Title>
                     Retinopathy of Prematurity simulation <Badge>2024</Badge>
                 </Title>
+            </Container>
+
+            <Container maxW="container.md" mt={3}>
                 <P>
                     A VR simulation that helps ophthalmologists to diagnose and treat Retinopathy of Prematurity (ROP), a potentially blinding eye disorder that primarily affects premature infants. A PC version will also be available for those who don't have VR devices.
                 </P>

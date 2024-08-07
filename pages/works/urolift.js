@@ -7,10 +7,13 @@ import Layout from "../../components/layouts/article"
 const Work = () => {
     return (
         <Layout title="UroLift® Training system - John Lee">
-            <Container>
+            <Container maxW="container.xl">
                 <Title>
                     UroLift® Training system <Badge>2022</Badge>
                 </Title>
+            </Container>
+
+            <Container maxW="container.md" mt={3}>
                 <P>
                     A VR training platform that accelerates the effective use of the Teleflex’s UroLift® 2 System, an innovative technology for treatment of benign prostatic hyperplasia (BPH), commonly known as enlarged prostate.
                 </P>
@@ -41,14 +44,16 @@ const Work = () => {
                     </ListItem> */}
                 </List>
 
-                <WorkImage src="/images/urolift.jpg" alt="Ghost hand visual guidance" />
-                <Text fontSize={15}>Ghost hand visual guidance. Appear when available action is in the proximity.</Text>
-                <Box h='30px' />
-                <WorkImage src="/images/urolift2.jpg" alt="Anatomy visualizer" />
-                <Text fontSize={15}>Anatomy visualizer. Assist users to find the correct angle and depth of the device.</Text>
-                <Box h='30px' />
-                <WorkImage src="/images/urolift3.jpg" alt="Pop-up label UI" />
-                <Text fontSize={15}>Pop-up label UI. Position-based visual guidance that provides information to the user.</Text>
+                <WorkImage src="/images/urolift.jpg" alt="Ghost hand visual guidance">
+                    Ghost hand visual guidance. Appear when available action is in the proximity.
+                </WorkImage>
+                <WorkImage src="/images/urolift2.jpg" alt="Anatomy visualizer">
+                    Anatomy visualizer. Assist users to find the correct angle and depth of the device.
+                </WorkImage>
+                <WorkImage src="/images/urolift3.jpg" alt="Pop-up label UI"
+                >
+                    Pop-up label UI. Position-based visual guidance that provides information to the user.
+                </WorkImage>
             </Container>
         </Layout >
     )

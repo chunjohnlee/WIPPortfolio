@@ -7,10 +7,13 @@ import Layout from "../../components/layouts/article"
 const Work = () => {
     return (
         <Layout title="Vicarious Robot VR sim - John Lee">
-            <Container>
+            <Container maxW="container.xl">
                 <Title>
                     Vicarious Robot VR sim <Badge>2023</Badge>
                 </Title>
+            </Container>
+
+            <Container maxW="container.md" mt={3}>
                 <P>
                     A VR training simulation that allows surgeons to practice on the Vicarious Surgical Robot, a minimally invasive surgical system that leverages human-like robots and VR to perform surgeries remotely.
                 </P>
@@ -47,18 +50,15 @@ const Work = () => {
                     </ListItem> */}
                 </List>
 
-                <WorkImage src="/images/vicarious.png" alt="Vicarious Robot" />
-                <Text fontSize={15}>Performing suturing with Vicarious robot.</Text>
-                <Box h='30px' />
-                <WorkImage src="/images/vicarious2.jpg" alt="Patient Cart" />
-                <Text fontSize={15}>
+                <WorkImage src="/images/vicarious.png" alt="Vicarious Robot">
+                    Performing suturing with Vicarious robot.
+                </WorkImage>
+                <WorkImage src="/images/vicarious2.jpg" alt="Patient Cart">
                     Patient Cart connects with the patient and allows the robot entering the body through a single incision while the surgeon maintains control of the instrument arm. I developed an IK system where the rotation of the joints is calculated according to the position and rotation of the robot and its own movement constraints.
-                </Text>
-                <Box h='30px' />
-                <WorkImage src="/images/vicarious3.jpg" alt="Surgeon Console" />
-                <Text fontSize={15}>
+                </WorkImage>
+                <WorkImage src="/images/vicarious3.jpg" alt="Surgeon Console">
                     This is where the surgeon sits to drive the robot. When the VR controllers are engaged to the console, the user can move the robot, its arms and camera with a high range of freedom.
-                </Text>
+                </WorkImage>
             </Container>
         </Layout>
     )

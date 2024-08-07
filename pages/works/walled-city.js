@@ -9,13 +9,16 @@ import WallCity from "../../components/wallcity"
 const Work = () => {
     return (
         <Layout title="Les Misérables in Kowloon Walled City - John Lee">
-            <Container>
+            <Container maxW="container.xl">
                 <NoSsr>
                     <WallCity />
                 </NoSsr>
                 <Title>
                     Les Misérables in Kowloon Walled City VR <Badge>2024</Badge>
                 </Title>
+            </Container>
+
+            <Container maxW="container.md" mt={3}>
                 <P>
                     A VR immersive experience that takes you inside the 3D scan of a miniature model for a 360-degree immersive theatre design of the Kowloon Walled City, a once densely populated, ungoverned settlement in Hong Kong that was demolished in the early 1990s.
                 </P>

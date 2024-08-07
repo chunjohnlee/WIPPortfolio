@@ -32,7 +32,7 @@ const Page = () => {
                 {/* <Box borderRadius="lg" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} p={3} mb={6} align="center">
                     Hello there! I'm John, a VR software engineer based in London
                 </Box> */}
-                <Box display={{ md: "flex" }} mt={3}>
+                <Box display={{ md: "flex" }} mt={4}>
                     <Box flexGrow={1}>
                         <Heading as="h2" variant="page-title">
                             John Lee
