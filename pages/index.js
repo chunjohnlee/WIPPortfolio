@@ -10,7 +10,8 @@ import {
     ListItem,
     SimpleGrid,
     Icon,
-    useColorModeValue
+    useColorModeValue,
+    Divider
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Layout from '../components/layouts/article'
@@ -32,12 +33,14 @@ const Page = () => {
                 {/* <Box borderRadius="lg" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} p={3} mb={6} align="center">
                     Hello there! I'm John, a VR software engineer based in London
                 </Box> */}
-                <Box display={{ md: "flex" }} mt={4}>
+                <Box display={{ md: "flex" }} mt={4} mb={7}>
                     <Box flexGrow={1}>
                         <Heading as="h2" variant="page-title">
                             John Lee
                         </Heading>
-                        <p>VR Software Engineer</p>
+                        <Heading as="h3" variant="sub-title">
+                            VR Software Engineer
+                        </Heading>
                     </Box>
                     <Box
                         flexShrink={0}
@@ -56,7 +59,7 @@ const Page = () => {
                         />
                     </Box>
                 </Box>
-
+                <Divider mb={7} />
                 <Section delay={0.1}>
                     <Heading as="h3">
                         About Me
@@ -155,7 +158,7 @@ const Page = () => {
                     </Paragraph>
                 </Section>
 
-                <Section delay={0.3}>
+                {/* <Section delay={0.3}>
                     <Heading as="h3" variant="section-title">
                         Social
                     </Heading>
@@ -194,12 +197,11 @@ const Page = () => {
                         {
                             // TODO: Add Instagram
                         }
-                        {
-                        /* <Link href="https://instagram.com/blackjlc" title="Instagram" target="_blank">
+                        <Link href="https://instagram.com/blackjlc" title="Instagram" target="_blank">
                             <IoLogoInstagram size={24} />
-                        </Link> */}
+                        </Link>
                     </List>
-                </Section>
+                </Section> */}
             </Container>
         </Layout>
     )

@@ -1,8 +1,14 @@
 import Logo from './logo'
 import NextLink from 'next/link'
-import { Container, Box, Link, Stack, Heading, Flex, Menu, MenuItem, MenuList, MenuButton, IconButton, useColorModeValue } from '@chakra-ui/react'
+import { Container, Box, Link, Stack, Heading, Flex, Menu, MenuItem, MenuList, MenuButton, IconButton, useColorModeValue, Button, Icon } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button'
+import {
+    IoLogoTwitter,
+    IoLogoInstagram,
+    IoLogoGithub,
+    IoLogoLinkedin,
+} from 'react-icons/io5'
 
 const NavBarLinkItem = ({ href, path, children }) => {
     const active = path === href
@@ -57,28 +63,67 @@ const Navbar = props => {
                 </Stack>
 
                 <Box flex={1} align="right">
-                    {/* <ThemeToggleButton /> */}
-
-                    <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
-                        <Menu>
-                            <MenuButton
-                                as={IconButton}
-                                icon={<HamburgerIcon />}
-                                variant="outline"
-                                aria-label="Options" />
-                            <MenuList>
-                                <NextLink href="/" passHref>
-                                    <MenuItem as={Link}>About</MenuItem>
-                                </NextLink>
-                                <NextLink href="/works" passHref>
-                                    <MenuItem as={Link}>Works</MenuItem>
-                                </NextLink>
-                                {/* <NextLink href="/posts" passHref>
+                    <Stack
+                        direction='row'
+                        display='flex'
+                        width='auto'
+                        height='full'
+                        alignItems="center"
+                        justifyContent="right"
+                        flexGrow={1}
+                        mt={0}
+                        alignContent="right"
+                    >
+                        <Link href="https://x.com/chunlee_john" target="_blank">
+                            <IconButton
+                                variant="ghost"
+                                aria-label='Twitter'
+                                color='highlight'
+                                icon={<Icon as={IoLogoTwitter} />}
+                                isRound={true}
+                            />
+                        </Link>
+                        <Link href="https://github.com/blackjlc" target="_blank">
+                            <IconButton
+                                variant="ghost"
+                                aria-label='GitHub'
+                                color='highlight'
+                                icon={<Icon as={IoLogoGithub} />}
+                                isRound={true}
+                            />
+                        </Link>
+                        <Link href="https://www.linkedin.com/in/chun-john-lee/" target="_blank">
+                            <IconButton
+                                variant="ghost"
+                                aria-label='LinkedIn'
+                                color='highlight'
+                                icon={<Icon as={IoLogoLinkedin} />}
+                                isRound={true}
+                            />
+                        </Link>
+                        <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
+                            <Menu>
+                                <MenuButton
+                                    as={IconButton}
+                                    icon={<HamburgerIcon />}
+                                    variant="outline"
+                                    aria-label="Options" />
+                                <MenuList>
+                                    <NextLink href="/" passHref>
+                                        <MenuItem as={Link}>About</MenuItem>
+                                    </NextLink>
+                                    <NextLink href="/works" passHref>
+                                        <MenuItem as={Link}>Works</MenuItem>
+                                    </NextLink>
+                                    {/* <NextLink href="/posts" passHref>
                                     <MenuItem as={Link}>Posts</MenuItem>
                                 </NextLink> */}
-                            </MenuList>
-                        </Menu>
-                    </Box>
+                                </MenuList>
+                            </Menu>
+                        </Box>
+                    </Stack>
+
+                    {/* <ThemeToggleButton /> */}
                 </Box>
             </Container >
         </Box >
