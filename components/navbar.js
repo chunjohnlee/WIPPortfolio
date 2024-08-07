@@ -11,7 +11,7 @@ const NavBarLinkItem = ({ href, path, children }) => {
         <Link
             as={NextLink}
             p={2}
-            bg={active ? 'glassTeal' : undefined}
+            bg={active ? 'highlight' : undefined}
             color={active ? '#202023' : inactiveColor}
             href={href}>
             {children}
@@ -31,7 +31,7 @@ const Navbar = props => {
             zIndex={1}
             {...props}
         >
-            <Container display="flex" p={2} maxW="container.md" wrap="wrap" align="center" justify="space-between">
+            <Container display="flex" p={2} maxW="container.xl" wrap="wrap" align="center" justify="space-between">
                 <Flex align="center" mr={5}>
                     <Heading as="h1" size="lg" letterSpacing="wide">
                         <Logo />
@@ -57,7 +57,7 @@ const Navbar = props => {
                 </Stack>
 
                 <Box flex={1} align="right">
-                    <ThemeToggleButton />
+                    {/* <ThemeToggleButton /> */}
 
                     <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
                         <Menu>

@@ -30,7 +30,7 @@ const components = {
     },
     Link: {
         baseStyle: props => ({
-            color: mode('#3d7aed', '#88ccca')(props),
+            color: mode('#3d7aed', 'highlight')(props),
             textUnderlineOffset: 3,
         })
     }
@@ -43,6 +43,7 @@ const fonts = {
 
 const colors = {
     glassTeal: '#88ccca',
+    highlight: '#ff6375',
 }
 
 // 2. Add your color mode config
