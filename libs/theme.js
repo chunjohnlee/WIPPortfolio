@@ -37,8 +37,8 @@ const components = {
 }
 
 const fonts = {
-    heading: "'Microgramma D Medium Extended'",
-    body: "'PP Telegraf'",
+    heading: "Microgramma D Medium Extended",
+    body: "PP Telegraf",
 }
 
 const colors = {
