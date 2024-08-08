@@ -34,14 +34,6 @@ const Page = () => {
                     Hello there! I'm John, a VR software engineer based in London
                 </Box> */}
                 <Box display={{ md: "flex" }} mt={4} mb={7}>
-                    <Box flexGrow={1}>
-                        <Heading as="h2" variant="page-title">
-                            John Lee
-                        </Heading>
-                        <Heading as="h3" variant="sub-title">
-                            VR Software Engineer
-                        </Heading>
-                    </Box>
                     <Box
                         flexShrink={0}
                         mt={{ base: 4, md: 0 }}
@@ -57,6 +49,14 @@ const Page = () => {
                             src="/images/profile.jpg"
                             alt="Profile image"
                         />
+                    </Box>
+                    <Box flexGrow={1} ml={{ base: 10 }} alignContent="center">
+                        <Heading as="h2" variant="page-title">
+                            John Lee
+                        </Heading>
+                        <Heading as="h3" variant="sub-title">
+                            VR Software Engineer
+                        </Heading>
                     </Box>
                 </Box>
                 <Divider mb={7} />
